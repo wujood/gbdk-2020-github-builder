@@ -5,3 +5,6 @@ cd $1
 
 # Compile main.c
 gcc -o myapp main.c
+
+# Execute compiled application
+./myapp
