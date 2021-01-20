@@ -10,7 +10,6 @@ jobs:
       id: hello
       uses: ./
       with:
-        who-to-greet: 'Mona the Octocat'
         subdirectory: ./test-sources
     # Use the output from the `hello` step
     - name: Get the output time

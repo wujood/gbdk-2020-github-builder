@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
-echo "Hello $1"
-time=$(date)
-echo "::set-output name=time::$time"
+echo "Chosen directory: $1"
+
+# Compile main.c
+gcc -o myapp main.c
