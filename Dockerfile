@@ -1,9 +1,9 @@
 # Container image that runs your code
 FROM gcc:4.9
 
-ENV directory ${directory}=""
+ENV directory ${subdirectory}
 
-COPY ./${directory} /usr/src/gb-app
+COPY ${directory} /usr/src/gb-app
 WORKDIR /usr/src/gb-app
 RUN gcc -o myapp main.c
 
