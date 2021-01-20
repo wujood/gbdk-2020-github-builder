@@ -1,6 +1,9 @@
 # Container image that runs your code
 FROM gcc:4.9
 
+ADD https://github.com/Zal0/gbdk-2020/releases/download/4.0.2/gbdk-linux64.tar.gz /usr/lib/gbdk.tar.gz
+RUN tar -xvf /usr/lib/gbdk.tar.gz
+
 COPY ./ /usr/src/gb-app
 WORKDIR /usr/src/gb-app
 
