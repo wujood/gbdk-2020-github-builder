@@ -5,7 +5,7 @@ inputs:
   subdirectory:
     description: 'Path to sources'
     required: false
-    default: './'
+    default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
