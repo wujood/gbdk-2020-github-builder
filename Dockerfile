@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine:4.9
+FROM alpine
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN apt-get update
 RUN apt-get install gcc-4.9 g++-4.9
