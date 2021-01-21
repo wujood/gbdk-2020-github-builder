@@ -7,7 +7,7 @@ jobs:
     name: Build gbdk project
     steps:
     - name: Checkout project
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: Build
       uses: ./ # This is only here because the actions is in this repository
       with:
