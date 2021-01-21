@@ -1,6 +1,11 @@
 #!/bin/sh -l
 alias gbdkcc='gcc -I /usr/lib/gdbk/include/**'
 
+ls /usr/lib/gbdk/
+echo "-----------"
+ls /usr/lib/gbdk/include/
+echo "-----------"
+
 echo "Chosen directory: $1"
 cd $1
 
