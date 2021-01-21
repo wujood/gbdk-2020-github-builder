@@ -1,6 +1,6 @@
 # action.yml
-name: 'GDBK Builder'
-description: 'Build gdbk projects'
+name: 'GBDK Builder'
+description: 'Build gbdbk projects'
 inputs:
   subdirectory:
     description: 'Path to sources'
