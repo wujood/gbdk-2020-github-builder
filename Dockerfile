@@ -1,5 +1,8 @@
 # Container image that runs your code
-FROM ubuntu
+FROM alpine
+
+RUN apt-get install software-properties-common
+RUN apt-get update
 
 RUN add-apt-repository ppa:ubuntu-toolchain-r/ppa
 RUN apt-get update
