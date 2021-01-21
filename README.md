@@ -2,7 +2,7 @@
 
 ![Example Workflow](https://github.com/wujood/gbdk-2020-github-builder/workflows/Example%20Workflow/badge.svg)
 
-This action builds gdbk projects with gcc.
+This action builds gbdk projects with gcc.
 
 ## Inputs
 
@@ -14,8 +14,8 @@ The subfolder where the sources are located. Default is `"./"`.
 
 ```
 # action.yml
-name: 'GDBK Builder'
-description: 'Build gdbk projects'
+name: 'GBDK Builder'
+description: 'Build gbdk projects'
 inputs:
   subdirectory:
     description: 'Path to sources'
