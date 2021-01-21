@@ -1,6 +1,7 @@
 # Container image that runs your code
 FROM ubuntu
 
+RUN apt-get updat
 RUN apt-get install software-properties-common
 RUN apt-get update
 
