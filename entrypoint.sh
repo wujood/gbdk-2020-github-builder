@@ -1,11 +1,8 @@
 #!/bin/sh -l
 
 # Set paths
-echo $PATH
-PATH=${PATH}:/usr/lib/gbdk/include/:/usr/lib/gbdk/bin/
-export PATH
-LD_LIBRARY_PATH=/usr/local/lib64/:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH
+export PATH="/usr/lib/gbdk/include:/usr/lib/gbdk/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/lib64/:$LD_LIBRARY_PATH"
 
 alias gbdkcc='/usr/lib/gbdk/bin/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG -I /usr/lib/gbdk/include/'
 
