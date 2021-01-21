@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine
+FROM ubuntu
 RUN apt-get update
 RUN apt-get install gcc-4.8
 
