@@ -1,5 +1,5 @@
 #!/bin/sh -l
-alias gbdkcc='/usr/lib/gbdk/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG -I /usr/lib/gbdk/include/'
+alias gbdkcc='/usr/lib/gbdk/bin/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG -I /usr/lib/gbdk/include/'
 
 echo $PATH
 PATH=${PATH}:/usr/lib/gbdk/include/
