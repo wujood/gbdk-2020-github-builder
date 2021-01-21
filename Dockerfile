@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine
+FROM ubuntu
 
 RUN apt-get install software-properties-common
 RUN apt-get update
