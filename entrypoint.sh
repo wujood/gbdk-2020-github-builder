@@ -1,8 +1,10 @@
 #!/bin/sh -l
-alias gbdkcc='/usr/lib/gbdk/bin/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG -I /usr/lib/gbdk/include/'
 
+# Set paths
 echo $PATH
-PATH=${PATH}:/usr/lib/gbdk/include/
+PATH=${PATH}:/usr/lib/gbdk/include/:/usr/lib/gbdk/bin/
+
+alias gbdkcc='/usr/lib/gbdk/bin/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG -I /usr/lib/gbdk/include/'
 
 # Switch directory
 echo "Chosen directory: $1"
