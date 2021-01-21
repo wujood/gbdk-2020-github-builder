@@ -1,5 +1,7 @@
 # GBDK GitHub Action Builder
 
+![Example Workflow](https://github.com/wujood/gbdk-2020-github-builder/workflows/Example%20Workflow/badge.svg)
+
 This action builds gdbk projects with gcc.
 
 ## Inputs
