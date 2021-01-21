@@ -1,21 +1,27 @@
-# Hello world docker action
+# GBDK GitHub Action Builder
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action builds gdbk projects with gcc.
 
 ## Inputs
 
-### `who-to-greet`
+### `subdirectory`
 
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
+The subfolder where the sources are located. Default is `"./"`.
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+```
+# action.yml
+name: 'GDBK Builder'
+description: 'Build gdbk projects'
+inputs:
+  subdirectory:
+    description: 'Path to sources'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.subdirectory }}
+```
