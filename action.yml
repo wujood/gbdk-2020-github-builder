@@ -6,6 +6,9 @@ inputs:
     description: 'Path to sources'
     required: false
     default: '.'
+branding:
+  icon: play-circle
+  color: yellow
 runs:
   using: 'docker'
   image: 'Dockerfile'
