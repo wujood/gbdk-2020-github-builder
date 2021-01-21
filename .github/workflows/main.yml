@@ -1,9 +1,10 @@
+name: Example Workflow
 on: [push]
 
 jobs:
-  hello_world_job:
+  build:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Build hello world application
     steps:
     - uses: actions/checkout@v2
     - name: Hello world action step
@@ -11,6 +12,3 @@ jobs:
       uses: ./
       with:
         subdirectory: ./test-sources
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
