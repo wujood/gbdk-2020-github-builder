@@ -13,17 +13,18 @@ The subfolder where the sources are located. Default is `"./"`.
 ## Example usage
 
 ```
-# action.yml
-name: 'GBDK Builder'
-description: 'Build gbdk projects'
-inputs:
-  subdirectory:
-    description: 'Path to sources'
-    required: false
-    default: '.'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.subdirectory }}
+name: Example Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build gbdk project
+    steps:
+    - name: Checkout project
+    - uses: actions/checkout@v2
+    - name: Build
+      uses: wujood/gbdk-2020-github-builder
+      with:
+        subdirectory: ./test-sources
 ```

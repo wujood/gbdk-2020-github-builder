@@ -4,11 +4,11 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build hello world application
+    name: Build gbdk project
     steps:
+    - name: Checkout project
     - uses: actions/checkout@v2
-    - name: Hello world action step
-      id: hello
-      uses: ./
+    - name: Build
+      uses: ./ # This is only here because the actions is in this repository
       with:
         subdirectory: ./test-sources
