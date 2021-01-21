@@ -5,7 +5,9 @@ export PATH="/usr/lib/gbdk/include:/usr/lib/gbdk/bin":$PATH
 export LD_LIBRARY_PATH="/usr/local/lib64/":$LD_LIBRARY_PATH
 
 echo "-----------"
-echo which gcc
+which gcc
+echo "-----------"
+gcc -v
 echo "-----------"
 alias gbdkcc='/usr/lib/gbdk/bin/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG -I /usr/lib/gbdk/include/'
 
