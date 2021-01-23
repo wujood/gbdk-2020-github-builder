@@ -1,0 +1,26 @@
+name: Example Release
+on:  
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Build gbdk project
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+    - name: Build
+      uses: ./ # This is only here because the actions is in this repository
+      with:
+        subdirectory: ./test-sources
+    - name: Archive build with source code
+      run: tar czf release_${{ github.ref }}.tar.gz ./test-sources
+    - name: Upload binary to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: release_${{ github.ref }}.tar.gz
+        asset_name: release_${{ github.ref }}
+        tag: ${{ github.ref }}
