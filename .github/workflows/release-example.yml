@@ -15,12 +15,10 @@ jobs:
       uses: ./ # This is only here because the actions is in this repository
       with:
         subdirectory: ./test-sources
-    - name: Archive build with source code
-      run: tar czf release_${{ github.ref }}.tar.gz ./test-sources
     - name: Upload binary to release
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: release_${{ github.ref }}.tar.gz
-        asset_name: release_${{ github.ref }}
+        file: ./test-sources/game.gb # This is kind of weird a.t.m. 
+        asset_name: ROM # Rename this to what ever you want
         tag: ${{ github.ref }}
