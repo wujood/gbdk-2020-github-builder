@@ -12,3 +12,5 @@ jobs:
       uses: ./ # This is only here because the actions is in this repository
       with:
         subdirectory: ./test-sources
+    - name: Print out build folder
+      run: ls test-sources

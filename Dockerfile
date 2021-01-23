@@ -5,6 +5,7 @@ ADD https://github.com/Zal0/gbdk-2020/releases/download/4.0.2/gbdk-linux64.tar.g
 RUN tar -xvf /usr/lib/gbdk.tar.gz -C /usr/lib/
 
 WORKDIR /github/workspace
+RUN ls
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
