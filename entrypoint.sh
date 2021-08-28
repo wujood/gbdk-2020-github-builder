@@ -11,5 +11,5 @@ echo "Chosen directory: $1"
 cd $1
 
 # Compile
-gbdkcc -c -o $2.o $3.c
+gbdkcc -c -o $2.o $3
 gbdkcc -o $2.gb $2.o
