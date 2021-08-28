@@ -10,6 +10,6 @@ alias gbdkcc='/usr/lib/gbdk/bin/lcc -Wa-l -Wl-j -DUSE_SFR_FOR_REG'
 echo "Chosen directory: $1"
 cd $1
 
-# Compile main.c
-gbdkcc -c -o game.o main.c
-gbdkcc -o game.gb game.o
+# Compile
+gbdkcc -c -o $2.o $3.c
+gbdkcc -o $2.gb $2.o
