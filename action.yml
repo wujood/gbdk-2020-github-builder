@@ -22,3 +22,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.subdirectory }}
+    - ${{ inputs.output-name }}
+    - ${{ inputs.source }}
