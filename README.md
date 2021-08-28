@@ -10,6 +10,14 @@ This action builds gbdk projects with gcc.
 
 The subfolder where the sources are located. Default is `"./"`.
 
+### `output-name`
+
+Rename the output file. The name should no contain special characters. Default is `game`.
+
+### `source`
+
+Specifies the source name relative to the subdirectory. Default is `main.c`
+
 ## Example usage
 
 ```yml
@@ -26,7 +34,9 @@ jobs:
     - name: Build
       uses: wujood/gbdk-2020-github-builder
       with:
-        subdirectory: ./test-sources
+        subdirectory: ./test-sources # Define the source folder. Default is ./
+        output-name: your-game # Rename the output file. Default is game
+        source: main.c # Main source file of your project. Deafult is main.c
 ```
 
 ## Upload result 
@@ -51,7 +61,7 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: ./test-sources/game.gb # Result file from build is called game.gb
+        file: ./test-sources/game.gb # Result file from build is called game.gb by default. Rename it with the output-name parameter.
         asset_name: ROM # Rename this to what ever you want
         tag: ${{ github.ref }}
 ```
