@@ -2,7 +2,7 @@
 
 ![Example Workflow](https://github.com/wujood/gbdk-2020-github-builder/workflows/Example%20Workflow/badge.svg)
 
-This action builds gbdk projects with gcc.
+This action builds [gbdk-2020](https://github.com/gbdk-2020/gbdk-2020) projects with gcc.
 
 ## Inputs
 
