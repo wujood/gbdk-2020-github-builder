@@ -6,6 +6,14 @@ inputs:
     description: 'Path to sources'
     required: false
     default: '.'
+  output-name:
+    description: 'Changes the name of the resulting file. <output-name>.gb will be the result.'
+    required: false
+    default: 'game'
+  source:
+    description: 'Main source filename'
+    required: false
+    default: 'main.c'
 branding:
   icon: play-circle
   color: yellow
@@ -14,3 +22,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.subdirectory }}
+    - ${{ inputs.output-name }}
+    - ${{ inputs.source }}
