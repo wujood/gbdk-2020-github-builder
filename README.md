@@ -32,7 +32,7 @@ jobs:
     - name: Checkout project
     - uses: actions/checkout@v2
     - name: Build
-      uses: wujood/gbdk-2020-github-builder
+      uses: wujood/gbdk-2020-github-builder@1.0.5
       with:
         subdirectory: ./test-sources # Define the source folder. Default is ./
         output-name: your-game # Rename the output file. Default is game
@@ -54,7 +54,7 @@ jobs:
     - name: Checkout project
       uses: actions/checkout@v2
     - name: Build
-      uses: wujood/gbdk-2020-github-builder
+      uses: wujood/gbdk-2020-github-builder@1.0.5
       with:
         subdirectory: ./test-sources
     - name: Upload binary to release
