@@ -1,5 +1,6 @@
 # GBDK GitHub Action Builder
 
+<a href="https://github.com/gbdk-2020/gbdk-2020"><img src="https://img.shields.io/badge/GBDK--Version-4.0.6-brightgreen" /></a>
 ![Example Workflow](https://github.com/wujood/gbdk-2020-github-builder/workflows/Example%20Workflow/badge.svg)
 
 This action builds [gbdk-2020](https://github.com/gbdk-2020/gbdk-2020) projects with gcc.
