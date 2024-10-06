@@ -1,7 +1,7 @@
 # GBDK GitHub Action Builder
 
-<a href="https://github.com/gbdk-2020/gbdk-2020"><img src="https://img.shields.io/github/v/release/wujood/gbdk-2020-github-builder?label=Latest%20Release&logo=github" /></a>
-<a href="https://github.com/gbdk-2020/gbdk-2020"><img src="https://img.shields.io/badge/GBDK--Version-4.0.6-brightgreen" /></a>
+<a href="https://github.com/wujood/gbdk-2020-github-builder/releases"><img src="https://img.shields.io/github/v/release/wujood/gbdk-2020-github-builder?label=Latest%20Release&logo=github" /></a>
+<a href="https://github.com/gbdk-2020/gbdk-2020"><img src="https://img.shields.io/badge/GBDK--Version-4.3.0-brightgreen" /></a>
 
 ![Example Workflow](https://github.com/wujood/gbdk-2020-github-builder/workflows/Example%20Workflow/badge.svg)
 
